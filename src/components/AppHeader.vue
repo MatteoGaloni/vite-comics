@@ -5,6 +5,7 @@ export default {
 </script>
 
 <template>
+
         <div id="nav_wrapper" class="d-flex justify-content-between align-items-center">
             <div class="nav_left">
                 <img id="nav_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1200px-DC_Comics_logo.svg.png" alt="">
