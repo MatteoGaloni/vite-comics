@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-
-        <div id="nav_wrapper" class="d-flex justify-content-between align-items-center">
+    <div id="nav_wrapper">
+        <div class="container d-flex justify-content-between align-items-center">
             <div class="nav_left">
                 <img id="nav_logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/DC_Comics_logo.svg/1200px-DC_Comics_logo.svg.png" alt="">
             </div>
@@ -23,10 +23,9 @@ export default {
                     <a class="p-1" href="#"><li>LINK</li></a>
                     <a class="p-1" href="#"><li>LINK</li></a>
                 </ul>
-            </div>
-            
-        </div>
-
+            </div>            
+       </div>
+    </div>
 </template>
 
 <style scoped>
@@ -34,9 +33,8 @@ export default {
 
 #nav_wrapper{
     background-color: white;
-    max-width: 1400px;
     margin: auto;
-    min-height: 80px;
+    height: 15vh;
 }
 
 

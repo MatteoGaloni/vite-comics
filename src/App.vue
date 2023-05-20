@@ -14,6 +14,29 @@ export default {
 
   data() {
     return {
+      links: ["Characters", "Comics", "Movies", "TV", "Collectibles", "Videos", "Fans", "News", "Shop"],
+
+      images: [{
+        name: "Digital Comics",
+        path: "./assets/img/buy-comics-digital-comics.png",
+      },
+      {
+        name: "Dc Merchandise",
+        path: "./assets/img/buy-comics-merchandise.png",
+      },
+      {
+        name: "Subscription",
+        path: "./assets/img/buy-comics-subscriptions.png",
+      },
+      {
+        name: "Comic Shop Locator",
+        path: "./assets/img/buy-comics-shop-locator.png",
+      },
+      {
+        name: "Dc Power Visa",
+        path: "./assets/img/buy-dc-power-visa.svg",
+      },
+      ]
 
     }
   },
@@ -31,7 +54,7 @@ export default {
   <AppMain />
 
   <AppFooter />
-
+  <img src="./assets/img/buy-dc-power-visa.svg" alt="">
 
 </div>
 
