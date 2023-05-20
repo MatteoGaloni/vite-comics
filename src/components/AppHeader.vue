@@ -1,6 +1,7 @@
 <script>
 export default {
-    name: "AppHeader"
+    name: "AppHeader",
+    props: ["links"], 
 }
 </script>
 
@@ -12,16 +13,7 @@ export default {
             </div>
             <div class="nav_right">
                 <ul class="d-flex list-unstyled">
-                    <a class="p-1" href="#"><li>LINK</li></a>
-                    <a class="p-1" href="#"><li>LINK</li></a>
-                    <a class="p-1" href="#"><li>LINK</li></a>
-                    <a class="p-1" href="#"><li>LINK</li></a>
-                    <a class="p-1" href="#"><li>LINK</li></a>
-                    <a class="p-1" href="#"><li>LINK</li></a>
-                    <a class="p-1" href="#"><li>LINK</li></a>
-                    <a class="p-1" href="#"><li>LINK</li></a>
-                    <a class="p-1" href="#"><li>LINK</li></a>
-                    <a class="p-1" href="#"><li>LINK</li></a>
+                    <a :key="link" v-for="link in links" class="p-1" href="#"><li>{{link}}</li></a>                
                 </ul>
             </div>            
        </div>

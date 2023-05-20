@@ -49,12 +49,11 @@ export default {
 
 <template>
 <div>
-  <AppHeader />
+  <AppHeader :links="links" />
 
-  <AppMain />
+  <AppMain :images="images" />
 
-  <AppFooter />
-  <img src="./assets/img/buy-dc-power-visa.svg" alt="">
+  <AppFooter :links="links" />
 
 </div>
 
