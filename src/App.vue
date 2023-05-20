@@ -14,7 +14,7 @@ export default {
 
   data() {
     return {
-      links: ["Characters", "Comics", "Movies", "TV", "Collectibles", "Videos", "Fans", "News", "Shop"],
+      links: ["Characters", "Comics", "Movies", "TV", "Games", "Collectibles", "Videos", "Fans", "News", "Shop"],
 
       images: [{
         name: "Digital Comics",

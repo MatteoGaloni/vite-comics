@@ -1,6 +1,7 @@
 <script>
 export default {
-    name: "AppFooter"
+    name: "AppFooter",
+    props: ["links"],
 }
 
 </script>
@@ -12,13 +13,8 @@ export default {
                 <div class="left_column">
                     <h6>Titolo</h6>
                     <ul class="list-unstyled">
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>                       
+                        <a v-show="link != 'Collectibles'&& link != 'Fans' && link != 'Shop'" :key="link" v-for="link in links" href="#"><li><small>{{link}}</small></li></a>
+                      
                     </ul>
                     <h6>Titolo</h6>
                     <ul class="list-unstyled">
