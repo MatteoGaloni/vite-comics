@@ -6,12 +6,20 @@ import AppFooter from './components/AppFooter.vue';
 
 
 export default {
-  components:{
+  components: {
     AppHeader,
     AppMain,
     AppFooter,
-  }
+  },
 
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    
+  }
 }
 </script>
 
