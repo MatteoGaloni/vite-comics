@@ -6,26 +6,17 @@ export default {
 </script>
 
 <template>
-    <div id="new_content_wrapper">
-        <div class="container d-flex justify-content-between align-items-center">
-            
-            <div class="nav_left">
-                <h2 class>CONTENT GOES HERE
-                    <!-- <button @click="addbutton()">CLICCAMI</button> -->
-                </h2>
-            </div>
-            <div class="nav_right">                  
-            </div>            
-        </div>
+    <div id="new_content_wrapper">          
+                <h5>CONTENT GOES HERE</h5>           
     </div>  
     <div id="main_link_wrapper"> 
         <div class="container" >
             <ul class="d-flex justify-content-around list-unstyled">
                 <div v-for="image in images">
                     <a class="p-1" href="#">
-                        <li class="d-flex">
+                        <li class="d-flex align-items-center">
                             <img class="main_img_list" :src="image.path" alt="">
-                            <p>{{image.name.toUpperCase()}}</p>
+                            <p class="icon_title">{{image.name.toUpperCase()}}</p>
                         </li>
                     </a>                    
                 </div>
@@ -39,25 +30,28 @@ export default {
 <style scoped>
   #new_content_wrapper{
     color: white;
-    background-color: black;
+    background-color: rgb(28, 28, 28);
     margin: auto;
     height: 15vh;
 }
 /******************************** */
 #main_link_wrapper{
     color: white;
-    background-color: rgb(58, 19, 166);
+    background-color: rgb(2, 130, 249);
     margin: auto;
-    height: 15vhpx;
+    height: 15vh;
     }
 .main_img_list{ 
-    height: 15vh;
+    height: 50px;
     padding: 0.2rem;
 }
-
-ul{
+.icon_title{
+    color: white;
+    font-size: 0.7rem;
+    padding-left: 0.5rem;
     margin: 0;
 }
+
 
 /***********JUMBO********************* */
 
