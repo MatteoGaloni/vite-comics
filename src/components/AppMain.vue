@@ -1,6 +1,7 @@
 <script>
 export default {
-    name : "AppMain"
+    name: "AppMain",
+    props: ["images"],
 }
 </script>
 
@@ -20,11 +21,14 @@ export default {
     <div id="main_link_wrapper"> 
         <div class="container" >
             <ul class="d-flex justify-content-around list-unstyled">
-                <a class="p-1" href="#"><li><img class="main_img_list" src="../assets/img/buy-comics-digital-comics.png" alt=""></li></a>
-                <a class="p-1" href="#"><li><img class="main_img_list" src="../assets/img/buy-comics-digital-comics.png" alt=""></li></a>
-                <a class="p-1" href="#"><li><img class="main_img_list" src="../assets/img/buy-comics-digital-comics.png" alt=""></li></a>
-                <a class="p-1" href="#"><li><img class="main_img_list" src="../assets/img/buy-comics-digital-comics.png" alt=""></li></a>
-                <a class="p-1" href="#"><li><img class="main_img_list" src="../assets/img/buy-comics-digital-comics.png" alt=""></li></a>
+                <div v-for="image in images">
+                    <a class="p-1" href="#">
+                        <li class="d-flex">
+                            <img class="main_img_list" :src="image.path" alt="">
+                            <p>{{image.name.toUpperCase()}}</p>
+                        </li>
+                    </a>                    
+                </div>
             </ul>    
         </div>
     </div>

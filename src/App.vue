@@ -18,23 +18,23 @@ export default {
 
       images: [{
         name: "Digital Comics",
-        path: "./assets/img/buy-comics-digital-comics.png",
+        path: "./src/assets/img/buy-comics-digital-comics.png",
       },
       {
         name: "Dc Merchandise",
-        path: "./assets/img/buy-comics-merchandise.png",
+        path: "./src/assets/img/buy-comics-merchandise.png",
       },
       {
         name: "Subscription",
-        path: "./assets/img/buy-comics-subscriptions.png",
+        path: "./src/assets/img/buy-comics-subscriptions.png",
       },
       {
         name: "Comic Shop Locator",
-        path: "./assets/img/buy-comics-shop-locator.png",
+        path: "./src/assets/img/buy-comics-shop-locator.png",
       },
       {
         name: "Dc Power Visa",
-        path: "./assets/img/buy-dc-power-visa.svg",
+        path: "./src/assets/img/buy-dc-power-visa.svg",
       },
       ]
 
