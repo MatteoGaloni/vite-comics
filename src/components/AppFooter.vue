@@ -10,44 +10,44 @@ export default {
     <div id="jumbo">
         <div id="jumbo_wrapper" class="container d-flex justify-content-between">
             <div class="link_left_container d-flex">
-                <div class="left_column">
-                    <h6>Titolo</h6>
+                <div class="left_column m-2 p-1">
+                    <h6>DC COMICS</h6>
                     <ul class="list-unstyled">
                         <a v-show="link != 'Collectibles'&& link != 'Fans' && link != 'Shop'" :key="link" v-for="link in links" href="#"><li><small>{{link}}</small></li></a>
                       
                     </ul>
-                    <h6>Titolo</h6>
+                    <h6>SHOP</h6>
                     <ul class="list-unstyled">
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
+                        <a href="#"><li><small>Shop DC</small></li></a>
+                        <a href="#"><li><small>Shop DC Collectibles</small></li></a>
                        
                     </ul>
                 </div>
-                <div class="center_column">
-                    <h6>Titolo</h6>
+                <div class="center_column m-2 p-1">
+                    <h6>DC</h6>
                     <ul class="list-unstyled">
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>                         
+                        <a href="#"><li><small>Terms Of Use</small></li></a>
+                        <a href="#"><li><small>Privacy policy (New)</small></li></a>
+                        <a href="#"><li><small>Ad Choises</small></li></a>
+                        <a href="#"><li><small>Advertising</small></li></a>
+                        <a href="#"><li><small>Jobs</small></li></a>
+                        <a href="#"><li><small>Subscriptions</small></li></a>
+                        <a href="#"><li><small>Talent Workshops</small></li></a>
+                        <a href="#"><li><small>CPSC Certificates</small></li></a>
+                        <a href="#"><li><small>Ratings</small></li></a>
+                        <a href="#"><li><small>Shop Help</small></li></a>
+                        <a href="#"><li><small>Contacts Us</small></li></a>                         
                     </ul>
 
                 </div>
-                <div class="center_column">
-                    <h6>Titolo</h6>
+                <div class="right_column m-2 p-1">
+                    <h6>SITES</h6>
                     <ul class="list-unstyled">
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>
-                        <a href="#"><li><small>LINK</small></li></a>                       
+                        <a href="#"><li><small>DC</small></li></a>
+                        <a href="#"><li><small>MAD Magazine</small></li></a>
+                        <a href="#"><li><small>DC Kids</small></li></a>
+                        <a href="#"><li><small>DC Universe</small></li></a>
+                        <a href="#"><li><small>DC Power Visa</small></li></a>                       
                     </ul>
 
                 </div>        
@@ -110,5 +110,9 @@ small{
 #nav_logo{
     height: 60px;
     padding: 0.5rem;
+}
+
+img{
+    height: 30px;
 }
 </style>

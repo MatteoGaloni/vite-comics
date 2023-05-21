@@ -6,8 +6,10 @@ export default {
 </script>
 
 <template>
-    <div id="new_content_wrapper">          
-                <h5>CONTENT GOES HERE</h5>           
+    <div id="new_content_wrapper">  
+        <div class="container p-2">        
+            <h5>CONTENT GOES HERE</h5>
+        </div>           
     </div>  
     <div id="main_link_wrapper"> 
         <div class="container" >

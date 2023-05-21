@@ -13,7 +13,7 @@ export default {
             </div>
             <div class="nav_right">
                 <ul class="d-flex list-unstyled">
-                    <a :key="link" v-for="link in links" class="p-1" href="#"><li>{{link}}</li></a>                
+                    <a :key="link" v-for="link in links" class="link p-1" href="#"><li>{{link}}</li></a>                
                 </ul>
             </div>            
        </div>
@@ -29,8 +29,13 @@ export default {
     height: 15vh;
 }
 
-
 #nav_logo{
     height: 65px;
 }
+
+.link{
+    color: black;
+}
+
+
 </style>
