@@ -1,24 +1,21 @@
 <script>
 export default {
-    name : "Slider",
+    name: "Slider",
+    props: {
+       thumbs : Object,
+    }
 }
 </script>
 
 <template>
         <div id="slider_wrapper">  
             <div class="container p-2 d-flex flex-wrap">        
-                <div class="slide">1</div>
-                <div class="slide">2</div>
-                <div class="slide">3</div>
-                <div class="slide">4</div>
-                <div class="slide">5</div>
-                <div class="slide">6</div>
-                <div class="slide">1</div>
-                <div class="slide">2</div>
-                <div class="slide">3</div>
-                <div class="slide">4</div>
-                <div class="slide">5</div>
-                <div class="slide">6</div>
+                <div v-for="thumb in thumbs" class="slide p-2">
+                    <img :src="thumb.thumb" alt="icon">
+                    <h6 class="slide_title">{{ thumb.series }}</h6>
+                </div>
+
+
             </div>           
         </div> 
 </template>
@@ -34,6 +31,16 @@ export default {
 
 .slide{
     width: calc(100% / 6);
+    img{
+    width: 100%;
+    height: 171px;
+    object-fit: cover;
+    object-position: top;
+        &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+        } 
+    }
 }
 
 </style>
