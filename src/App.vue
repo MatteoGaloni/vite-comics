@@ -3,6 +3,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import Slider from './components/Slider.vue';
+import Json from './assets/json/dc-comics.json';
 
 
 
@@ -16,6 +17,7 @@ export default {
 
   data() {
     return {
+      myJson: Json,
       links: ["Characters", "Comics", "Movies", "TV", "Games", "Collectibles", "Videos", "Fans", "News", "Shop"],
       images: [{
           name: "Digital Comics",
@@ -125,7 +127,8 @@ export default {
 <div>
   <AppHeader :links="links" />
 
-  <Slider :thumbs="thumbs" />
+  <Slider :myJson="myJson" />
+  <!-- <Slider :thumbs="thumbs" /> -->
 
   <AppMain :images="images" />
 

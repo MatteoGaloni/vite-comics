@@ -2,17 +2,19 @@
 export default {
     name: "Slider",
     props: {
-       thumbs : Object,
+        thumbs: Object,
+        Json: Object,
     }
+   
 }
 </script>
 
 <template>
         <div id="slider_wrapper">  
             <div class="container p-2 d-flex flex-wrap">        
-                <div v-for="thumb in thumbs" class="slide p-2">
+                <div v-for="thumb in Json" class="slide p-2">
                     <img :src="thumb.thumb" alt="icon">
-                    <h6 class="slide_title">{{ thumb.series }}</h6>
+                    <h6 class="slide_title p-2">{{ thumb.series }}</h6>
                 </div>
 
 
