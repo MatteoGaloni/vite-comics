@@ -89,5 +89,6 @@ export default {
     object-position: top;
     height: 310px;
     width: 100%;
+    opacity: 0.6;
 }
 </style>
