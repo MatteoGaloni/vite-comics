@@ -29,7 +29,7 @@ export default {
 </template>
 
 
-<style scoped>
+<style scoped lang="scss">
   #new_content_wrapper{
     color: white;
     background-color: rgb(28, 28, 28);

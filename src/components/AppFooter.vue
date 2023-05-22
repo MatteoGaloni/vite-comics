@@ -75,7 +75,7 @@ export default {
     </div>    
 </template>  
 
-<style scoped>
+<style scoped lang="scss">
 
 #jumbo{      
     margin: auto;

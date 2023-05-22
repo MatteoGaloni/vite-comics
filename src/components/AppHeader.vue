@@ -1,7 +1,9 @@
 <script>
 export default {
     name: "AppHeader",
-    props: ["links"], 
+    props: {
+        links: Object,
+    } 
 }
 </script>
 
@@ -20,7 +22,7 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 
 
 #nav_wrapper{
@@ -36,6 +38,10 @@ export default {
 .link{
     color: black;
 }
+/* 
+.link::after{
+    border: red 1px;
+} */
 
 
 </style>
