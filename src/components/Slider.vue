@@ -32,15 +32,20 @@ export default {
 
 .slide{
     width: calc(100% / 6);
+       &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+        } 
+
     img{
     width: 100%;
     height: 171px;
     object-fit: cover;
     object-position: top;
-        &:hover {
-        opacity: 0.7;
-        cursor: pointer;
-        } 
+     
+    }
+    .slide_title{
+        color: darkgray;
     }
 }
 

@@ -63,10 +63,10 @@ export default {
                 <ul class="d-flex list-unstyled align-items-center">
                     <a class="p-2" href="#"><li>FOLLOW US</li></a>
                     <a class="p-2" href="#"><li><img src="../assets/img/footer-facebook.png" alt=""></li></a>
-                    <a class="p-2" href="#"><li><img src="../assets/img/footer-facebook.png" alt=""></li></a>
+                    <a class="p-2" href="#"><li><img src="../assets/img/footer-twitter.png" alt=""></li></a>
+                    <a class="p-2" href="#"><li><img src="../assets/img/footer-youtube.png" alt=""></li></a>
                     <a class="p-2" href="#"><li><img src="../assets/img/footer-pinterest.png" alt=""></li></a>
-                    <a class="p-2" href="#"><li><img src="../assets/img/footer-pinterest.png" alt=""></li></a>
-                    <a class="p-2" href="#"><li><img src="../assets/img/footer-pinterest.png" alt=""></li></a>
+                    <a class="p-2" href="#"><li><img src="../assets/img/footer-periscope.png" alt=""></li></a>
 
                 </ul>
             </div>
