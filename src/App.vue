@@ -127,8 +127,7 @@ export default {
 <div>
   <AppHeader :links="links" />
 
-  <Slider :myJson="myJson" />
-  <!-- <Slider :thumbs="thumbs" /> -->
+  <Slider :thumbs="thumbs" />
 
   <AppMain :images="images" />
 

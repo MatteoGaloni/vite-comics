@@ -20,6 +20,9 @@ export default {
             </div>            
        </div>
     </div>
+    <div id="jumbo">
+        <img src="../assets/img/jumbotron.jpg" alt="">
+    </div>
 </template>
 
 <style scoped lang="scss">
@@ -43,6 +46,16 @@ export default {
 
 .link{
     color: black;
+}
+
+#jumbo{
+    height: 310px;
+    img{
+        object-fit: cover;
+        object-position: top;
+        height: 100%;
+        width: 100%;
+    }
 }
 /* 
 .link::after{

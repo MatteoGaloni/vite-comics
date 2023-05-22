@@ -31,6 +31,7 @@ export default {
     color: white;
     background-color: rgb(2, 130, 249);
     margin: auto;
+    padding: 1rem;
     }
 .main_img_list{ 
     height: 50px;

@@ -2,22 +2,20 @@
 export default {
     name: "Slider",
     props: {
-        thumbs: Object,
-        Json: Object,
+       thumbs : Object,
     }
-   
 }
 </script>
 
 <template>
         <div id="slider_wrapper">  
-            <div class="container p-2 d-flex flex-wrap">        
-                <div v-for="thumb in Json" class="slide p-2">
+            <button id="current_btn" class="btn btn-primary border-primary text-white">CURRENT SERIES</button>        
+            <div class="container p-2 d-flex flex-wrap">
+                <div v-for="thumb in thumbs" class="slide p-2">
                     <img :src="thumb.thumb" alt="icon">
                     <h6 class="slide_title p-2">{{ thumb.series }}</h6>
                 </div>
-
-
+                <button id="load_btn" class="btn btn-primary border-primary text-white">LOAD MORE</button>
             </div>           
         </div> 
 </template>
@@ -27,6 +25,7 @@ export default {
     color: white;
     background-color: rgb(28, 28, 28);
     margin: auto;
+    padding-top: 3rem;
 }
 
 
@@ -43,6 +42,16 @@ export default {
         cursor: pointer;
         } 
     }
+}
+
+#current_btn{
+    position: absolute;
+    left: 12%;
+    top: 55%;
+    padding: 0.5rem 1rem;
+}
+#load_btn{
+    margin: 0 auto 1rem;
 }
 
 </style>
