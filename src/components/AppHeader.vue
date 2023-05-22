@@ -43,9 +43,12 @@ export default {
     padding: 1rem 0;
 }
 
-
 .link{
     color: black;
+    text-decoration: none;
+    & :hover{
+        opacity: 0.7;
+    }
 }
 
 #jumbo{
@@ -57,10 +60,4 @@ export default {
         width: 100%;
     }
 }
-/* 
-.link::after{
-    border: red 1px;
-} */
-
-
 </style>

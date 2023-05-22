@@ -5,39 +5,39 @@ export default {
 }
 </script>
 
-<template> 
-    <div id="main_link_wrapper"> 
-        <div class="container" >
+<template>
+    <div id="main_link_wrapper">
+        <div class="container">
             <ul class="d-flex justify-content-around m-0">
                 <div v-for="image in images">
-                    <a class="p-1" href="#">
+                    <a class="p-1 text-decoration-none" href="#">
                         <li class="d-flex align-items-center">
                             <img class="main_img_list" :src="image.path" alt="">
-                            <p class="icon_title">{{image.name.toUpperCase()}}</p>
+                            <p class="icon_title">{{ image.name.toUpperCase() }}</p>
                         </li>
-                    </a>                    
+                    </a>
                 </div>
-            </ul>    
+            </ul>
         </div>
     </div>
-    
 </template>
 
 
 <style scoped lang="scss">
-
 /******************************** */
-#main_link_wrapper{
+#main_link_wrapper {
     color: white;
     background-color: rgb(2, 130, 249);
     margin: auto;
     padding: 1rem;
-    }
-.main_img_list{ 
+}
+
+.main_img_list {
     height: 50px;
     padding: 0.2rem;
 }
-.icon_title{
+
+.icon_title {
     color: white;
     font-size: 0.7rem;
     padding-left: 0.5rem;
@@ -46,7 +46,4 @@ export default {
 
 
 /***********JUMBO********************* */
-
-
-
 </style>
