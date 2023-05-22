@@ -20,25 +20,25 @@ export default {
       myJson: Json,
       links: ["Characters", "Comics", "Movies", "TV", "Games", "Collectibles", "Videos", "Fans", "News", "Shop"],
       images: [{
-          name: "Digital Comics",
-          path: "./src/assets/img/buy-comics-digital-comics.png",
-        },
-        {
-          name: "Dc Merchandise",
-          path: "./src/assets/img/buy-comics-merchandise.png",
-        },
-        {
-          name: "Subscription",
-          path: "./src/assets/img/buy-comics-subscriptions.png",
-        },
-        {
-          name: "Comic Shop Locator",
-          path: "./src/assets/img/buy-comics-shop-locator.png",
-        },
-        {
-          name: "Dc Power Visa",
-          path: "./src/assets/img/buy-dc-power-visa.svg",
-        },
+        name: "Digital Comics",
+        path: "./src/assets/img/buy-comics-digital-comics.png",
+      },
+      {
+        name: "Dc Merchandise",
+        path: "./src/assets/img/buy-comics-merchandise.png",
+      },
+      {
+        name: "Subscription",
+        path: "./src/assets/img/buy-comics-subscriptions.png",
+      },
+      {
+        name: "Comic Shop Locator",
+        path: "./src/assets/img/buy-comics-shop-locator.png",
+      },
+      {
+        name: "Dc Power Visa",
+        path: "./src/assets/img/buy-dc-power-visa.svg",
+      },
       ],
       thumbs: [
         {
@@ -117,27 +117,22 @@ export default {
     }
   },
   methods: {
-    
+
   }
 }
 </script>
 
 
 <template>
-<div>
-  <AppHeader :links="links" />
+  <div>
+    <AppHeader :links="links" />
 
-  <Slider :thumbs="thumbs" />
+    <Slider :thumbs="thumbs" />
 
-  <AppMain :images="images" />
+    <AppMain :images="images" />
 
-  <AppFooter :links="links" />
-
-</div>
-
+    <AppFooter :links="links" />
+  </div>
 </template>
 
-<style scoped lang="scss">
-
-
-</style>
+<style scoped lang="scss"></style>
