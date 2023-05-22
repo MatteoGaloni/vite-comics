@@ -2,12 +2,14 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import Slider from './components/Slider.vue';
 
 
 
 export default {
   components: {
     AppHeader,
+    Slider,
     AppMain,
     AppFooter,
   },
@@ -48,6 +50,8 @@ export default {
 <template>
 <div>
   <AppHeader :links="links" />
+
+  <Slider />
 
   <AppMain :images="images" />
 

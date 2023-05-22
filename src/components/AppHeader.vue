@@ -27,13 +27,19 @@ export default {
 
 #nav_wrapper{
     background-color: white;
-    margin: auto;
-    height: 15vh;
 }
 
-#nav_logo{
-    height: 65px;
+.nav_left{
+    padding: 1rem 0;
+    #nav_logo{
+    width: 65px;
+    }
 }
+
+.nav_right{
+    padding: 1rem 0;
+}
+
 
 .link{
     color: black;

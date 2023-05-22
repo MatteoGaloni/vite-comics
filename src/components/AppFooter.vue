@@ -79,7 +79,6 @@ export default {
 
 #jumbo{      
     margin: auto;
-    height: 45vh;
     color: white;
     background-image: url(../assets/img/footer-bg.jpg);
 
@@ -89,7 +88,7 @@ export default {
     background-image: url(../assets/img/dc-logo-bg.png);
     background-repeat: no-repeat;
     background-position: right;
-    margin-bottom: 0;
+    padding: 1rem 0;
 }
 
 small{
@@ -103,7 +102,6 @@ small{
 #nav_wrapper{
     background-color:rgb(48, 48, 48);
     margin: auto;
-    height: 10vh;
 }
 
 

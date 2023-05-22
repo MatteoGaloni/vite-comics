@@ -5,15 +5,10 @@ export default {
 }
 </script>
 
-<template>
-    <div id="new_content_wrapper">  
-        <div class="container p-2">        
-            <h5>CONTENT GOES HERE</h5>
-        </div>           
-    </div>  
+<template> 
     <div id="main_link_wrapper"> 
         <div class="container" >
-            <ul class="d-flex justify-content-around list-unstyled">
+            <ul class="d-flex justify-content-around m-0">
                 <div v-for="image in images">
                     <a class="p-1" href="#">
                         <li class="d-flex align-items-center">
@@ -30,18 +25,12 @@ export default {
 
 
 <style scoped lang="scss">
-  #new_content_wrapper{
-    color: white;
-    background-color: rgb(28, 28, 28);
-    margin: auto;
-    height: 15vh;
-}
+
 /******************************** */
 #main_link_wrapper{
     color: white;
     background-color: rgb(2, 130, 249);
     margin: auto;
-    height: 15vh;
     }
 .main_img_list{ 
     height: 50px;
