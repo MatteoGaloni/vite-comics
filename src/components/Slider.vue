@@ -1,8 +1,15 @@
 <script>
+import json from '../assets/json/dc-comics.json';
+
 export default {
     name: "Slider",
     props: {
        thumbs : Object,
+    },
+    data() {
+    return {
+    myJson: json
+        }
     }
 }
 </script>
@@ -11,7 +18,7 @@ export default {
         <div id="slider_wrapper">  
             <button id="current_btn" class="btn btn-primary border-primary text-white">CURRENT SERIES</button>        
             <div class="container p-2 d-flex flex-wrap">
-                <div v-for="thumb in thumbs" class="slide p-2">
+                <div v-for="thumb in myJson" class="slide p-2">
                     <img :src="thumb.thumb" alt="icon">
                     <h6 class="slide_title p-2">{{ thumb.series }}</h6>
                 </div>
